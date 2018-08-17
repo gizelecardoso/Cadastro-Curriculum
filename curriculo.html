@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Currículo</title>
+    <link rel="icon" href="bells-logo.png" sizes="32x32" />
+    <link rel="icon" href="bells-logo.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="bells-logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="alert alert-dark" role="alert">
+
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">
+                  CURRÍCULO
+                </a>
+            </nav>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <img src="imagem.gif" width="200" height="200" alt="..." class="rounded">
+        </div>
+        <div class="row justify-content-center">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">
+                Escolha o arquivo
+              </label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+          </form>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <form>
+              <label for="dadosCurriculo">
+                Nome Completo
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva seu nome completo">
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4">
+            <form>
+              <label for="dadosCurriculo">
+                Nacionalidade
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Nacionalidade">
+            </form>
+          </div>
+          <div class="col-12 col-md-3">
+            <form>
+              <label for="dadosCurriculo">
+                Estado Civil
+              </label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>
+                  Solteiro(a)
+                </option>
+                <option>
+                  Casado(a)
+                </option>
+                <option>
+                  Separado(a)
+                </option>
+                <option>
+                  Divorciado(a)
+                </option>
+                <option>
+                  Viúvo(a)
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="col-12 col-md-3">
+            <form>
+              <label for="dadosCurriculo">
+                Idade
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva sua Idade">
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-5">
+            <form>
+              <label for="dadosCurriculo">
+                Endereço
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva seu endereço">
+            </form>
+          </div>
+          <div class="col-12 col-md-1">
+            <form>
+              <label for="dadosCurriculo">
+                Número
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Numero">
+            </form>
+          </div>
+          <div class="col-12 col-md-2">
+            <form>
+              <label for="dadosCurriculo">
+                Complemento
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Complemento">
+            </form>
+          </div>
+          <div class="col-6 col-md-1">
+            <form>
+              <label for="dadosCurriculo">
+                Cidade
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Cidade">
+            </form>
+          </div>
+          <div class="col-6 col-md-1">
+            <form>
+              <label for="dadosCurriculo">
+                Estado
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Estado">
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-5">
+            <form>
+              <label for="dadosCurriculo">
+                Telefone
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="(00)0000-0000">
+            </form>
+          </div>
+          <div class="col-12 col-md-5">
+            <form>
+              <label for="dadosCurriculo">
+                E-mail
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva seu e-mail">
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Objetivos Profissionais
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escreva seus objetivos">
+              </textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="form-group">
+            <h4 class="text-info">
+              <label for="exampleFormControlTextarea1">
+                Experiência Profissional
+              </label>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Entrada
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Mês/Ano">
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Saída
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Mês/Ano">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">
+                  Atual
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Nome da Empresa
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Nome da Empresa">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Cargo
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Cargo Exercido na Empresa">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Principais Atividades
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escreva suas principais atividades"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalExperienciaProfissional">
+              Incluir Experiência Profissional
+            </button>
+            <div class="modal fade" id="ModalExperienciaProfissional" tabindex="-1" role="dialog" aria-labelledby="ModalExperienciaProfissional" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Nova Experiência Profissional
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-12 col-md-2">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">
+                          Entrada
+                        </label>
+                        <input type="nome" class="form-control" id ="inputNome" placeholder="Mês/Ano">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">
+                          Saída
+                        </label>
+                        <input type="nome" class="form-control" id ="inputNome" placeholder="Mês/Ano">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">
+                            Atual
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">
+                          Nome da Empresa
+                        </label>
+                        <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Nome da Empresa">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">
+                          Cargo
+                        </label>
+                        <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Cargo Exercido na Empresa">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">
+                          Principais Atividades
+                        </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escreva suas principais atividades"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Cancelar
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Salve Experiência
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="form-group">
+            <h4 class="text-info">
+              <label for="exampleFormControlTextarea1">
+                Formação Acadêmica
+              </label>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Início
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Mês/Ano">
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Previsão de Término
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Mês/Ano">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">
+                  Concluído
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Nome da Faculdade
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Nome da Faculdade">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Curso
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Nome do Curso">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Principais Habilitações
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escreva suas principais habilitações">
+              </textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="col">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalFormacaoAcademica">
+              Incluir Formação Acadêmica
+            </button>
+            <div class="modal fade" id="ModalExperienciaProfissional" tabindex="-1" role="dialog" aria-labelledby="ModalExperienciaProfissional" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Nova Formação Acadêmica
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Cancelar
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Salve Experiência
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="form-group">
+            <h4 class="text-info">
+              <label for="exampleFormControlTextarea1">
+                Cursos Extracurriculares
+              </label>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Curso
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Nome do Curso">
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Escolha
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva o Nome da Escola">
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Duração
+              </label>
+              <input type="nome" class="form-control" id ="inputNome" placeholder="Escreva a duração total">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-primary">
+              Incluir Curso Extra Curricular
+            </button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Informações Adicionais
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escreva informações importantes para o recrutador">
+              </textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
